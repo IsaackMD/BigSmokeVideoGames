@@ -1,0 +1,74 @@
+{
+    "id": "9989864827350783D",
+    "intent": "CAPTURE",
+    "status": "COMPLETED",
+    "purchase_units": [
+        {
+            "reference_id": "default",
+            "amount": {
+                "currency_code": "MXN",
+                "value": "135.41"
+            },
+            "payee": {
+                "email_address": "sb-px4et28704328@business.example.com",
+                "merchant_id": "DGQYGRWD64K76"
+            },
+            "soft_descriptor": "PAYPAL *TEST STORE",
+            "shipping": {
+                "name": {
+                    "full_name": "John Doe"
+                },
+                "address": {
+                    "address_line_1": "Calle Juarez 1",
+                    "address_line_2": "Col. Cuauhtemoc",
+                    "admin_area_2": "Miguel Hidalgo",
+                    "admin_area_1": "Ciudad de Mexico",
+                    "postal_code": "11580",
+                    "country_code": "MX"
+                }
+            },
+            "payments": {
+                "captures": [
+                    {
+                        "id": "0P483734YS000905L",
+                        "status": "COMPLETED",
+                        "amount": {
+                            "currency_code": "MXN",
+                            "value": "135.41"
+                        },
+                        "final_capture": true,
+                        "seller_protection": {
+                            "status": "ELIGIBLE",
+                            "dispute_categories": [
+                                "ITEM_NOT_RECEIVED",
+                                "UNAUTHORIZED_TRANSACTION"
+                            ]
+                        },
+                        "create_time": "2023-12-24T22:49:30Z",
+                        "update_time": "2023-12-24T22:49:30Z"
+                    }
+                ]
+            }
+        }
+    ],
+    "payer": {
+        "name": {
+            "given_name": "John",
+            "surname": "Doe"
+        },
+        "email_address": "sb-csfsi28499521@personal.example.com",
+        "payer_id": "GZ7TNKCFBPZNU",
+        "address": {
+            "country_code": "MX"
+        }
+    },
+    "create_time": "2023-12-24T22:49:21Z",
+    "update_time": "2023-12-24T22:49:30Z",
+    "links": [
+        {
+            "href": "https://api.sandbox.paypal.com/v2/checkout/orders/9989864827350783D",
+            "rel": "self",
+            "method": "GET"
+        }
+    ]
+}
